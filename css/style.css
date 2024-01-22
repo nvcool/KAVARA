@@ -1,10 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Forum&family=JetBrains+Mono:wght@400;500;700;800&display=swap");
 
-a {
+a,
+span {
   text-decoration: none;
 }
 
-ul {
+ul,
+p,
+h1,
+h2,
+h3,
+h4 {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -17,6 +23,7 @@ body {
 .container {
   max-width: 1600px;
   width: 100%;
+  margin: 0 auto;
 }
 
 .header {
@@ -48,5 +55,130 @@ body {
   gap: 8px;
 }
 
-.navigation__svg {
+.banner {
+  margin-bottom: 4.17vw;
+}
+
+.banner__content {
+  color: #030304;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px; /* 133.333% */
+  padding: 12px 0;
+}
+
+.slider {
+  max-width: 1920px;
+  max-height: 720px;
+  height: 37.5vw;
+  overflow: hidden;
+  position: relative;
+  display: grid;
+  justify-items: center;
+  align-items: end;
+}
+
+.slider__img {
+  max-width: 100%;
+  display: block;
+}
+
+.slider__link {
+  position: absolute;
+  z-index: 1;
+  margin-bottom: 5vw;
+}
+
+.btn {
+  border: none;
+  color: #fff;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 16px; /* 133.333% */
+  letter-spacing: 1.44px;
+  text-transform: uppercase;
+  background-color: #030304;
+  padding: 20px 40px;
+  cursor: pointer;
+}
+
+.brand__slogan {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 4.17vw;
+}
+
+.card {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 64px;
+}
+
+.card__box {
+  width: 512px;
+  height: 512px;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+}
+
+.card__box-image {
+  display: flex;
+  background: linear-gradient(
+    180deg,
+    rgba(3, 3, 4, 0.06) 0%,
+    rgba(3, 3, 4, 0.6) 100%
+  );
+}
+
+.card__box-image-png {
+  z-index: -1;
+}
+
+.card__box-description-svg1 {
+  position: absolute;
+}
+
+.card__box-description-svg2 {
+  right: 32px;
+  position: absolute;
+}
+
+.card__box-description-svg3 {
+  position: absolute;
+  bottom: 32px;
+  right: 32px;
+}
+
+.card__box-description-text {
+  position: absolute;
+  bottom: 32px;
+  color: #fff;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 133.333% */
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+}
+
+.card__box-description {
+  z-index: 1;
+  position: absolute;
+  padding: 32px;
+  width: 512px;
+  height: 512px;
+  box-sizing: border-box;
+}
+
+.clan {
+  height: 720px;
+  background-color: #f7f7fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 160px;
 }
